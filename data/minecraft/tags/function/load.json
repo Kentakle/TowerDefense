@@ -1,0 +1,7 @@
+{
+    "values": [
+        "kentakle:server/init/gamerule",
+        "kentakle:server/init/scoreboard",
+        "kentakle:server/init/storage"
+    ]
+}

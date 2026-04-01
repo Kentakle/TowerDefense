@@ -1,0 +1,63 @@
+{
+    "criteria": {
+        "reconect": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "verified": 1,
+                            "leave": {
+                                "min": 1,
+                                "max": 1000
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "not_verified": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "all_of",
+                        "terms": [
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "leave": {
+                                        "min": 1,
+                                        "max": 1000
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "inverted",
+                                "term": {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "verified": 1
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "reconect",
+            "not_verified"
+        ]
+    ],
+    "rewards": {
+        "function": "kentakle:handler/advancement/entry/branch"
+    }
+}

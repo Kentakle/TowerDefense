@@ -1,0 +1,2 @@
+execute as @e[type=item] if items entity @s contents #kentakle:runtime/broken_block run data modify entity @s Item.components."minecraft:can_place_on" set value [{blocks:"#kentakle:runtime/broken_block"}]
+tellraw @a [{text:"Стройка за пределами хаба запрещена!",color:"red"}]

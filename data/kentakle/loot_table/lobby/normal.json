@@ -1,0 +1,58 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_nautilus_armor",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "consumable": {
+                                    "consume_seconds": 0,
+                                    "sound": "intentionally_empty",
+                                    "has_consume_particles": false
+                                },
+                                "minecraft:use_cooldown": {
+                                    "seconds": 1,
+                                    "cooldown_group": "kentakle:difficulty"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "storage": "kentakle:central_info",
+                                "nbt": "difficulty[2]",
+                                "interpret": true,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Описание что будет при этой сложности",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

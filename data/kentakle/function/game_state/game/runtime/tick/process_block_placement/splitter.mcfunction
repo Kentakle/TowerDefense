@@ -1,0 +1,2 @@
+execute unless function kentakle:game_state/game/runtime/tick/process_block_placement/block_place_result/spot_1 unless function kentakle:game_state/game/runtime/tick/process_block_placement/block_place_result/spot_2 unless function kentakle:game_state/game/runtime/tick/process_block_placement/block_place_result/spot_3 unless function kentakle:game_state/game/runtime/tick/process_block_placement/block_place_result/spot_4 run return 0
+return 1

@@ -1,0 +1,1 @@
+data modify entity @e[type=text_display,tag=central_info,limit=1] text set value {storage:"kentakle:central_info",nbt:"info[]",interpret:true,separator:"\n"}

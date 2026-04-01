@@ -1,0 +1,56 @@
+{
+    "criteria": {
+        "ready": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "lime_dye"
+                }
+            }
+        },
+        "unready": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "red_dye"
+                }
+            }
+        },
+        "dif_1": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "copper_nautilus_armor"
+                }
+            }
+        },
+        "dif_2": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "golden_nautilus_armor"
+                }
+            }
+        },
+        "dif_3": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "diamond_nautilus_armor"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ready",
+            "unready",
+            "dif_1",
+            "dif_2",
+            "dif_3"
+        ]
+    ],
+    "rewards": {
+        "function": "kentakle:handler/use_item/item_list"
+    }
+}

@@ -1,0 +1,1 @@
+execute unless entity @e[type=text_display,tag=central_info] run function kentakle:game_state/lobby/summon_list/central_info

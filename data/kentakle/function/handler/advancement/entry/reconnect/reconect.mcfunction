@@ -1,0 +1,1 @@
+scoreboard players set @s readiness 0

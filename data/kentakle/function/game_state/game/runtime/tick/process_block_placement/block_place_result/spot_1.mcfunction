@@ -1,0 +1,1 @@
+return run execute as @e[type=armor_stand,tag=limiter_1,limit=1] at @s run fill ~25 ~-10 ~ ~-25 ~10 ~ air destroy

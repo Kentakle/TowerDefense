@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:notice",
+    "title": "",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": "Соглашение"
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "Версия: 0.0.1",
+                "hover_event": {
+                    "action": "show_text",
+                    "value": "БОБА"
+                }
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": false,
+    "pause": false,
+    "after_action": "close",
+    "action": {
+        "label": {
+            "text": "Согласен и продолжить"
+        },
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger globalTrigger set 1"
+        }
+    }
+}

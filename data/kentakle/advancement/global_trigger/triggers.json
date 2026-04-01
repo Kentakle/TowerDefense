@@ -1,0 +1,56 @@
+{
+    "criteria": {
+        "verification": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1
+                        }
+                    }
+                ]
+            }
+        },
+        "ready": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1001
+                        }
+                    }
+                ]
+            }
+        },
+        "unready": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1002
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "verification",
+            "ready",
+            "unready"
+        ]
+    ],
+    "rewards": {
+        "function": "kentakle:handler/trigger/global_trigger"
+    }
+}
