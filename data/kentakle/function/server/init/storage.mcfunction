@@ -2,7 +2,7 @@
     data modify storage kentakle:main ver set value 1
     data modify storage kentakle:main temp set value {}
 
-    data modify storage kentakle:main info set value [{},{text:""},{text:"Бюджет: "},]
+    data modify storage kentakle:main info set value [{},{text:""},{text:"Бюджет: "},{text:"Наград за раунд: "},]
 
     data modify storage kentakle:central_info difficulty set value [{},{text:"ЛЕГКО",color:"green"},{text:"НОРМАЛЬНО",color:"gold"},{text:"СЛОЖНО",color:"red"}]
     data modify storage kentakle:central_info health set value [{},{text:"0.7x"},{text:"1x"},{text:"1.3x"}]
