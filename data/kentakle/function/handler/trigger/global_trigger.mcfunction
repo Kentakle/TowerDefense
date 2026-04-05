@@ -6,4 +6,7 @@ execute if entity @s[advancements={kentakle:global_trigger/triggers={verificatio
 # execute if entity @s[advancements={kentakle:global_trigger/triggers={ready=true}}] run function kentakle:handler/player/state/setter/readiness/ready
 # execute if entity @s[advancements={kentakle:global_trigger/triggers={unready=true}}] run function kentakle:handler/player/state/setter/readiness/unready
 
+# Продолжить писать систему магазина
+execute if entity @s[advancements={kentakle:global_trigger/triggers={test=true}}] run 
+
 advancement revoke @s only kentakle:global_trigger/triggers

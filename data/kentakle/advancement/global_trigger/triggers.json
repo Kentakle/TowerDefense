@@ -41,13 +41,28 @@
                     }
                 ]
             }
+        },
+        "test": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 100
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
         [
             "verification",
             "ready",
-            "unready"
+            "unready",
+            "test"
         ]
     ],
     "rewards": {

@@ -3,21 +3,22 @@ kill @e[type=villager,tag=runtime]
 
 #==========================================================================================================================================================================================================================================================#
 # Оружейник
-summon villager -6 0 0 {Tags:["runtime","Gunsmith"],CustomName:[{text:"Торговец оружия",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[-90, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
-    {rewardExp:false,maxUses:99999,buy:{id:barrier,count:1},sell:{id:barrier,count:1}},\
+summon villager -6 0 0 {Tags:["runtime","gunsmith"],CustomName:[{text:"Торговец оружия",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[-90, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
+    {},\
     ]}}
+    # rewardExp:false,maxUses:99999,buy:{id:barrier,count:1},sell:{id:barrier,count:1}
 #==========================================================================================================================================================================================================================================================#
 
 #==========================================================================================================================================================================================================================================================#
 # Бронник
-summon villager 5 0 6 {Tags:["runtime","Gunsmith"],CustomName:[{text:"Торговец брони",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[180, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
-    {rewardExp:false,maxUses:99999,buy:{id:barrier,count:1},sell:{id:barrier,count:1}},\
+summon villager 5 0 6 {Tags:["runtime"],CustomName:[{text:"Торговец брони",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[180, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
+    {},\
     ]}}
 #==========================================================================================================================================================================================================================================================#
 
 #==========================================================================================================================================================================================================================================================#
 # Расходники
-summon villager 8 0 -8 {Tags:["runtime","Gunsmith"],CustomName:[{text:"Торговец расходниками",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[45, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
-    {rewardExp:false,maxUses:99999,buy:{id:barrier,count:1},sell:{id:barrier,count:1}},\
+summon villager 8 0 -8 {Tags:["runtime"],CustomName:[{text:"Торговец расходниками",color:"#d66d48"}],NoAI:true,Silent:true,Invulnerable:true,PersistenceRequired:true,Rotation:[45, 0],VillagerData:{type:"plains",profession:cleric,level:99},Offers:{Recipes:[\
+    {},\
     ]}}
 #==========================================================================================================================================================================================================================================================#

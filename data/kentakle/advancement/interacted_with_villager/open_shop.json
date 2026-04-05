@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "test": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kentakle:handler/player/interacted_with_entity/villager/test"
+    }
+}
