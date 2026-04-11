@@ -5,7 +5,7 @@ schedule clear kentakle:game_state/lobby/tick/start/counting_down/2
 schedule clear kentakle:game_state/lobby/tick/start/counting_down/3
 schedule clear kentakle:game_state/lobby/tick/start/counting_down/4
 schedule clear kentakle:game_state/lobby/tick/start/counting_down/5
-schedule clear kentakle:game_state/lobby/tick/start/counting_down/start
+schedule clear kentakle:game_state/lobby/tick/start/start
 
 
 title @a reset

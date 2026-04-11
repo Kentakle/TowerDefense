@@ -9,7 +9,7 @@
         "label": "Закрыть",
         "action": {
             "type": "minecraft:run_command",
-            "command": "trigger globalTrigger set 101"
+            "command": "trigger globalTrigger set 103"
         }
     },
     "dialogs": []

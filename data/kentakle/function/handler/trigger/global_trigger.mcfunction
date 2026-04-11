@@ -6,7 +6,11 @@ execute if entity @s[advancements={kentakle:global_trigger/triggers={verificatio
 # execute if entity @s[advancements={kentakle:global_trigger/triggers={ready=true}}] run function kentakle:handler/player/state/setter/readiness/ready
 # execute if entity @s[advancements={kentakle:global_trigger/triggers={unready=true}}] run function kentakle:handler/player/state/setter/readiness/unready
 
-# Продолжить писать систему магазина
-execute if entity @s[advancements={kentakle:global_trigger/triggers={test=true}}] run 
+#=======================================================================================================================================================================================================================================#
+    # Действия после закрытия жителя
+    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_gunsmith=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/gunsmith/action/close
+    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_armorer=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/armorer/action/close
+    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_toolsmith=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/toolsmith/action/close
+#=======================================================================================================================================================================================================================================#
 
 advancement revoke @s only kentakle:global_trigger/triggers

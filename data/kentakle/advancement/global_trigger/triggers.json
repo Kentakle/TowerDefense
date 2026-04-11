@@ -42,7 +42,7 @@
                 ]
             }
         },
-        "test": {
+        "player_closed_gunsmith": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -50,7 +50,35 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "globalTrigger": 100
+                            "globalTrigger": 101
+                        }
+                    }
+                ]
+            }
+        },
+        "player_closed_armorer": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 102
+                        }
+                    }
+                ]
+            }
+        },
+        "player_closed_toolsmith": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 103
                         }
                     }
                 ]
@@ -62,7 +90,9 @@
             "verification",
             "ready",
             "unready",
-            "test"
+            "player_closed_gunsmith",
+            "player_closed_armorer",
+            "player_closed_toolsmith"
         ]
     ],
     "rewards": {

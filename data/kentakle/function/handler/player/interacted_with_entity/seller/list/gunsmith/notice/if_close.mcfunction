@@ -1,0 +1,1 @@
+tellraw @s [{text:"Житель занят игроком "},{selector:"@a[tag=gunsmith]"}]
