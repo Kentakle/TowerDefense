@@ -1,5 +1,7 @@
 kill @e[tag=runtime]
 
+clear @a
+
 tag @a remove start_cancelled
 
 scoreboard players set #difficulty main 1

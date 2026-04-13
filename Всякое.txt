@@ -34,3 +34,5 @@
         "function": "kentakle:entry/verification/show_dialog"
     }
 }
+
++7 747 327 7245

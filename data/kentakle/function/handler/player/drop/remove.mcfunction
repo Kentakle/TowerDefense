@@ -1,0 +1,1 @@
+execute as @e[type=item] if items entity @s contents #kentakle:other/remove_group run kill @s

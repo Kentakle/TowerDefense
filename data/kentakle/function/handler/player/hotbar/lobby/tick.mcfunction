@@ -1,0 +1,1 @@
+# Запускается из kentakle:game_state/lobby/tick/tick
