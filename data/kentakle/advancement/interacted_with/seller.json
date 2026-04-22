@@ -1,176 +1,56 @@
 {
     "criteria": {
-        "gunsmith_open": {
+        "gunsmith": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "#kentakle:runtime/seller",
                     "nbt": {
                         "Tags": [
-                            "gunsmith",
-                            "can_open"
+                            "gunsmith"
                         ]
                     }
                 }
             }
+        
         },
-        "gunsmith_close": {
-            "trigger": "minecraft:player_interacted_with_entity",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "all_of",
-                        "terms": [
-                            {
-                                "condition": "inverted",
-                                "term": {
-                                    "condition": "entity_properties",
-                                    "entity": "interacting_entity",
-                                    "predicate": {
-                                        "type": "#kentakle:runtime/seller",
-                                        "nbt": {
-                                            "Tags": [
-                                                "can_open"
-                                            ]
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "interacting_entity",
-                                "predicate": {
-                                    "type": "#kentakle:runtime/seller",
-                                    "nbt": {
-                                        "Tags": [
-                                            "gunsmith"
-                                        ]
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        "armorer_open": {
+        "armorer": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "#kentakle:runtime/seller",
                     "nbt": {
                         "Tags": [
-                            "armorer",
-                            "can_open"
+                            "armorer"
                         ]
                     }
                 }
             }
+        
         },
-        "armorer_close": {
-            "trigger": "minecraft:player_interacted_with_entity",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "all_of",
-                        "terms": [
-                            {
-                                "condition": "inverted",
-                                "term": {
-                                    "condition": "entity_properties",
-                                    "entity": "interacting_entity",
-                                    "predicate": {
-                                        "type": "#kentakle:runtime/seller",
-                                        "nbt": {
-                                            "Tags": [
-                                                "can_open"
-                                            ]
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "interacting_entity",
-                                "predicate": {
-                                    "type": "#kentakle:runtime/seller",
-                                    "nbt": {
-                                        "Tags": [
-                                            "armorer"
-                                        ]
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        "toolsmith_open": {
+        "toolsmith": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "#kentakle:runtime/seller",
                     "nbt": {
                         "Tags": [
-                            "toolsmith",
-                            "can_open"
+                            "toolsmith"
                         ]
                     }
                 }
             }
-        },
-        "toolsmith_close": {
-            "trigger": "minecraft:player_interacted_with_entity",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "all_of",
-                        "terms": [
-                            {
-                                "condition": "inverted",
-                                "term": {
-                                    "condition": "entity_properties",
-                                    "entity": "interacting_entity",
-                                    "predicate": {
-                                        "type": "#kentakle:runtime/seller",
-                                        "nbt": {
-                                            "Tags": [
-                                                "can_open"
-                                            ]
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "interacting_entity",
-                                "predicate": {
-                                    "type": "#kentakle:runtime/seller",
-                                    "nbt": {
-                                        "Tags": [
-                                            "armorer"
-                                        ]
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
+        
         }
     },
     "requirements": [
         [
-            "gunsmith_open",
-            "gunsmith_close",
-            "armorer_open",
-            "armorer_close",
-            "toolsmith_open",
-            "toolsmith_close"
+            "gunsmith",
+            "armorer",
+            "toolsmith"
         ]
     ],
     "rewards": {
-        "function": "kentakle:handler/player/interacted_with_entity/seller/branch"
+        "function": "kentakle:handler/player/interacted_with_entity/seller/open_dialog"
     }
 }

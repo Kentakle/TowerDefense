@@ -2,5 +2,6 @@
     gamerule max_block_modifications 999999999
     gamerule advance_time false
     gamerule spawn_phantoms false
+    gamerule pvp false
     # gamerule natural_health_regeneration false
 #=======================================================================================================================================================================================================================================#

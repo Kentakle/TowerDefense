@@ -7,10 +7,11 @@ execute if entity @s[advancements={kentakle:global_trigger/triggers={verificatio
 # execute if entity @s[advancements={kentakle:global_trigger/triggers={unready=true}}] run function kentakle:handler/player/state/setter/readiness/unready
 
 #=======================================================================================================================================================================================================================================#
-    # Действия после закрытия жителя
-    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_gunsmith=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/gunsmith/action/close
-    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_armorer=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/armorer/action/close
-    execute if entity @s[advancements={kentakle:global_trigger/triggers={player_closed_toolsmith=true}}] run function kentakle:handler/player/interacted_with_entity/seller/list/toolsmith/action/close
+    # saller
+#=======================================================================================================================================================================================================================================#
+    # developer
+    # Проверяет есть ли хоть одна criteria связанная с bank_add & bank_remove
+        execute if entity @s[predicate=kentakle:developer/runtime/bank] run function kentakle:server/util/developer/runtime/bank/add_and_remove
 #=======================================================================================================================================================================================================================================#
 
 advancement revoke @s only kentakle:global_trigger/triggers

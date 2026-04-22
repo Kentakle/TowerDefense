@@ -1,9 +1,9 @@
 #=======================================================================================================================================================================================================================================#
     function kentakle:game_state/lobby/tick/ensure_object/entitie/list
-    # Так-же включает в себя item kill
-    execute as @a run function kentakle:game_state/lobby/tick/ensure_object/item/list
     function kentakle:game_state/lobby/tick/updater/data
     execute unless score #difficulty main = #difficulty_old main run function kentakle:game_state/lobby/tick/updater/storage
+    # Управление hotbar игрока
+    execute as @a run function kentakle:handler/player/hotbar/lobby/tick
 #=======================================================================================================================================================================================================================================#
 
 

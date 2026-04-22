@@ -4,11 +4,15 @@ clear @a
 
 tag @a remove start_cancelled
 
-scoreboard players set #difficulty main 1
+scoreboard objectives setdisplay sidebar
+
+scoreboard players set #difficulty main 2
 scoreboard players set @a readiness 0
 scoreboard players set #again main 1
+scoreboard players set #starting main 0
 
 schedule clear kentakle:game_state/game/runtime/tick/tick
+schedule clear kentakle:game_state/game/runtime/tick/scoreboard/increment_value
 function kentakle:game_state/lobby/tick/tick
 
 tp @a 0 0 0

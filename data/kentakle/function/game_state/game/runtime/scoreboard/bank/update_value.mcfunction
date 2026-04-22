@@ -1,0 +1,1 @@
+$scoreboard players display name line_4 info [{text:"",extra:[{storage:"kentakle:main",nbt:"info[4]",interpret:true}]},{text:"$(currentlyValue)"}]

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Меню разработчика"
+            },
+            {
+                "text": "\n\nruntime"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "after_action": "none",
+    "pause": false,
+    "exit_action": {
+        "label": "Вернуться на главную",
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kentakle:developer/main"
+        }
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Банк",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:developer/runtime/bank"
+            }
+        }
+    ]
+}

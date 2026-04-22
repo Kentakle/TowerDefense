@@ -1,13 +1,9 @@
 #=======================================================================================================================================================================================================================================#
-    scoreboard objectives add main dummy
-    scoreboard objectives add const dummy
-    scoreboard objectives add verified dummy
-    scoreboard objectives add readiness dummy
-    scoreboard objectives add globalTrigger trigger
-    scoreboard objectives add leave custom:leave_game
+    # Очистка всего инвенторя на случий если игрок просто переложил предмет
+    clear @s #kentakle:lobby/ready_or_not
+    # Удаление запрещенных к выбрасыванию предметов 
+    function kentakle:handler/player/drop/remove
 #=======================================================================================================================================================================================================================================#
-    # Основной скорборд с информацией который выводится игроку
-    scoreboard objectives add info dummy
-    scoreboard objectives modify info displayname [{text:"Информация"}]
-    scoreboard objectives modify info numberformat blank
+    execute if score @s readiness matches 0 run loot replace entity @s hotbar.1 loot kentakle:lobby/ready
+    execute if score @s readiness matches 1 run loot replace entity @s hotbar.1 loot kentakle:lobby/unready
 #=======================================================================================================================================================================================================================================#

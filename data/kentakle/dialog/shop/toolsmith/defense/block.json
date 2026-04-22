@@ -1,0 +1,136 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n"
+            },
+            {
+                "text": "Выберите уровень блоков"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "after_action": "none",
+    "pause": false,
+    "exit_action": {
+        "label": "Вернуться на главную",
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kentakle:shop/toolsmith/seller/toolsmith"
+        }
+    },
+    "columns": 3,
+    "actions": [
+        {
+            "label": "Булыжник 1 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 1\n\n"
+                },
+                {
+                    "text": "Цена: 1"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Булыжник 16 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 1\n\n"
+                },
+                {
+                    "text": "Цена: 16"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Булыжник 32 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 1\n\n"
+                },
+                {
+                    "text": "Цена: 32"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Кирпич 1 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 5\n\n"
+                },
+                {
+                    "text": "Цена: 5"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Кирпич 16 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 5\n\n"
+                },
+                {
+                    "text": "Цена: 80"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Кирпич 32 шт",
+            "tooltip": [
+                {
+                    "text": "Здоровье: 100\n"
+                },
+                {
+                    "text": "Броня: 5\n\n"
+                },
+                {
+                    "text": "Цена: 160"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": "Выберите тип обороны"
+    },
+    "can_close_with_escape": true,
+    "pause": false,
+    "exit_action": {
+        "label": "Вернуться на главную",
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kentakle:shop/toolsmith/seller/toolsmith"
+        }
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Стена",
+            "tooltip": "Расширенное описание",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:shop/toolsmith/defense/block"
+            }
+        },
+        {
+            "label": "Башня",
+            "tooltip": "Расширенное описание"
+        },
+        {
+            "label": "Приманка",
+            "tooltip": "Расширенное описание"
+        },
+        {
+            "label": "Приманка со взрывчаткой",
+            "tooltip": "Расширенное описание"
+        },
+        {
+            "label": "Мина",
+            "tooltip": "Расширенное описание"
+        }
+    ]
+}

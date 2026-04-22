@@ -14,35 +14,7 @@
                 ]
             }
         },
-        "ready": {
-            "trigger": "minecraft:tick",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "globalTrigger": 1001
-                        }
-                    }
-                ]
-            }
-        },
-        "unready": {
-            "trigger": "minecraft:tick",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "globalTrigger": 1002
-                        }
-                    }
-                ]
-            }
-        },
-        "player_closed_gunsmith": {
+        "player_closed_seller": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -56,7 +28,7 @@
                 ]
             }
         },
-        "player_closed_armorer": {
+        "dev_bank_add_100": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -64,13 +36,13 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "globalTrigger": 102
+                            "globalTrigger": 1001
                         }
                     }
                 ]
             }
         },
-        "player_closed_toolsmith": {
+        "dev_bank_remove_100": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -78,7 +50,63 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "globalTrigger": 103
+                            "globalTrigger": 1002
+                        }
+                    }
+                ]
+            }
+        },
+        "dev_bank_add_1000": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1003
+                        }
+                    }
+                ]
+            }
+        },
+        "dev_bank_remove_1000": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1004
+                        }
+                    }
+                ]
+            }
+        },
+        "dev_bank_add_10000": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1005
+                        }
+                    }
+                ]
+            }
+        },
+        "dev_bank_remove_10000": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 1006
                         }
                     }
                 ]
@@ -88,11 +116,13 @@
     "requirements": [
         [
             "verification",
-            "ready",
-            "unready",
-            "player_closed_gunsmith",
-            "player_closed_armorer",
-            "player_closed_toolsmith"
+            "player_closed_seller",
+            "dev_bank_add_100",
+            "dev_bank_remove_100",
+            "dev_bank_add_1000",
+            "dev_bank_remove_1000",
+            "dev_bank_add_10000",
+            "dev_bank_remove_10000"
         ]
     ],
     "rewards": {

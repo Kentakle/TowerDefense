@@ -1,13 +1,7 @@
 #=======================================================================================================================================================================================================================================#
-    scoreboard objectives add main dummy
-    scoreboard objectives add const dummy
-    scoreboard objectives add verified dummy
-    scoreboard objectives add readiness dummy
-    scoreboard objectives add globalTrigger trigger
-    scoreboard objectives add leave custom:leave_game
+    # ERROR
+        data modify storage kentakle:notification error_1 set value [{text:"server: для #add_to_bank main не указанно значение",color:"red"}]
 #=======================================================================================================================================================================================================================================#
-    # Основной скорборд с информацией который выводится игроку
-    scoreboard objectives add info dummy
-    scoreboard objectives modify info displayname [{text:"Информация"}]
-    scoreboard objectives modify info numberformat blank
+    # Notification
+        data modify storage kentakle:notification notification_1 set value [{text:"server: Отказанно в доступе",color:"gold"}]
 #=======================================================================================================================================================================================================================================#

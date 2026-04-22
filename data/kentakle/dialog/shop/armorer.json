@@ -12,5 +12,7 @@
             "command": "trigger globalTrigger set 102"
         }
     },
-    "dialogs": []
+    "dialogs": [
+        "kentakle:shop/gunsmith"
+    ]
 }

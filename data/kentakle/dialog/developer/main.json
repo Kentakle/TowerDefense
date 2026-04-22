@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Меню разработчика"
+            },
+            {
+                "text": "\n\nГлавная"
+            }
+        ]
+    },
+    "inputs": [],
+    "can_close_with_escape": true,
+    "after_action": "close",
+    "pause": false,
+    "exit_action": {
+        "label": "Закрыть"
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": "runtime",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:developer/runtime/branch"
+            }
+        },
+        {
+            "label": "lobby"
+        }
+    ]
+}

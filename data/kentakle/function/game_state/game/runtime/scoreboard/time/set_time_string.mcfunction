@@ -1,0 +1,1 @@
+$scoreboard players display name line_2 info [{text:"",extra:[{storage:"kentakle:main",nbt:"info[2]",interpret:true}]},{text:"$(hh)"},{text:":"},{text:"$(mm)"},{text:":"},{text:"$(ss)"}]

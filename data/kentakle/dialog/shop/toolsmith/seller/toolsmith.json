@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Расходники 1-го уровня\n\n\n"
+            },
+            {
+                "text": "Выберите один из разделов"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "pause": false,
+    "exit_action": {
+        "label": "Закрыть"
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Оборона",
+            "tooltip": "Расширенное описание",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:shop/toolsmith/defense/choose_type"
+            }
+        },
+        {
+            "label": "Расходники"
+        },
+        {
+            "label": "Бафы"
+        }
+    ]
+}

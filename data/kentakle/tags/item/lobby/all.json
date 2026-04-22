@@ -1,9 +1,6 @@
 {
     "values": [
-        "copper_nautilus_armor",
-        "golden_nautilus_armor",
-        "diamond_nautilus_armor",
-        "lime_dye",
-        "red_dye"
+        "#kentakle:lobby/difficulty/all",
+        "#kentakle:lobby/ready_or_not"
     ]
 }
