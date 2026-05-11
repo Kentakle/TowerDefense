@@ -17,13 +17,15 @@
             }
         }
     ],
-    "inputs": [],
     "can_close_with_escape": false,
     "pause": false,
     "after_action": "close",
     "action": {
         "label": {
             "text": "Согласен и продолжить"
+        },
+        "tooltip": {
+            "text": ""
         },
         "action": {
             "type": "minecraft:run_command",

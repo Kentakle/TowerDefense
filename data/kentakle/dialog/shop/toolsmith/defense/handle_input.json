@@ -20,8 +20,8 @@
             "label": "Стена",
             "tooltip": "Расширенное описание",
             "action": {
-                "type": "show_dialog",
-                "dialog": "kentakle:shop/toolsmith/defense/block"
+                "type": "run_command",
+                "command": "trigger globalTrigger set 4001"
             }
         },
         {

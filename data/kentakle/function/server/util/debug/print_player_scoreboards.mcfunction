@@ -1,13 +1,3 @@
-# execute as @a run tellraw @a[tag=dev] [\
-#     {text:"=========================================",color:"#f08f4e"},\
-#     {text:"\nplayer:"},{selector:"@s"},\
-#     {text:"\nverified:"},{score:{name:"@s",objective:"verified"}},\
-#     {text:"\nleave:"},{score:{name:"@s",objective:"leave"}},\
-#     {text:"\nglobalTrigger:"},{score:{name:"@s",objective:"globalTrigger"}},\
-#     {text:"\nreadiness:"},{score:{name:"@s",objective:"readiness"}},\
-#     {text:"\n========================================="}\
-# ]
-
 data modify storage kentakle:main temp set value [\
     {text:"=========================================",color:"#f08f4e"},\
     {text:"\nplayer:"},{selector:"@s"},\

@@ -1,0 +1,137 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_axe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Строительный топор",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Активен только во время подготовки",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "stone_axe"
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#toolsmith_lvl"
+                                        },
+                                        "score": "main"
+                                    },
+                                    "range": 2
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "iron_axe"
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#toolsmith_lvl"
+                                        },
+                                        "score": "main"
+                                    },
+                                    "range": 3
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "golden_axe"
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#toolsmith_lvl"
+                                        },
+                                        "score": "main"
+                                    },
+                                    "range": 4
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "diamond_axe"
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#toolsmith_lvl"
+                                        },
+                                        "score": "main"
+                                    },
+                                    "range": 5
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "netherite_axe"
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#toolsmith_lvl"
+                                        },
+                                        "score": "main"
+                                    },
+                                    "range": 6
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

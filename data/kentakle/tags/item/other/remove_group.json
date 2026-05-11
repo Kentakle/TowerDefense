@@ -1,9 +1,6 @@
 {
     "values": [
         "#kentakle:lobby/all",
-        "bow",
-        "#swords",
-        "pufferfish",
-        "amethyst_shard"
+        "#kentakle:runtime/all"
     ]
 }

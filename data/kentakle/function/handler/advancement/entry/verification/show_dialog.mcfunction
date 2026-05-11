@@ -1,7 +1,6 @@
 tp @s 0 -4 0 0 0
 gamemode spectator @s
 
-scoreboard players enable @s globalTrigger
 scoreboard players set @s readiness 0
 
 # Set dialog index and run

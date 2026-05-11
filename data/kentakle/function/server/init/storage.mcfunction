@@ -1,5 +1,5 @@
 #=======================================================================================================================================================================================================================================#
-    data modify storage kentakle:main ver set value "0.0.1"
+    data modify storage kentakle:main ver set value "0.0.6"
     data modify storage kentakle:main temp set value {}
 
     data modify storage kentakle:main info set value [{},{text:""},{text:"Время: "},{text:""},{text:"Банк: "},{text:""},{text:""}]
@@ -10,6 +10,7 @@
     data modify storage kentakle:central_info dohod set value [{},{text:"1.2x"},{text:"1x"},{text:"0.8x"}]
 
     function kentakle:server/init/const
+    function kentakle:server/init/sellers
 
     function kentakle:game_state/lobby/tick/updater/storage
     data modify storage kentakle:central_info info set value [\

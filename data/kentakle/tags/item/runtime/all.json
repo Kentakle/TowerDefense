@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#kentakle:runtime/broken_block",
+        "#kentakle:runtime/build_axe",
+        "#kentakle:runtime/magic",
+        "#kentakle:runtime/melee",
+        "#kentakle:runtime/range",
+        "#kentakle:runtime/start_wave"
+    ]
+}

@@ -1,0 +1,3 @@
+execute if entity @s[advancements={kentakle:global_trigger/triggers={open_toolsmith_main=true}}] run function kentakle:handler/player/interacted_with_entity/seller/open_main_viewport/toolsmith
+data modify storage kentakle:seller temp set from storage kentakle:seller toolsmith.block[0]
+execute if entity @s[advancements={kentakle:global_trigger/triggers={open_toolsmith_block=true}}] run return run function kentakle:handler/sellers/render_tabs/toolsmith/defense/set_viewport/block with storage kentakle:seller temp
