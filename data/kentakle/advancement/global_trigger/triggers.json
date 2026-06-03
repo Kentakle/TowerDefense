@@ -42,6 +42,104 @@
                 ]
             }
         },
+        "open_build_menu_defense": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7100
+                        }
+                    }
+                ]
+            }
+        },
+        "choose_block_1": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7101
+                        }
+                    }
+                ]
+            }
+        },
+        "choose_block_2": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7102
+                        }
+                    }
+                ]
+            }
+        },
+        "choose_block_3": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7103
+                        }
+                    }
+                ]
+            }
+        },
+        "choose_block_4": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7104
+                        }
+                    }
+                ]
+            }
+        },
+        "open_build_menu_supplies": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7200
+                        }
+                    }
+                ]
+            }
+        },
+        "open_build_menu_buff": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "globalTrigger": 7300
+                        }
+                    }
+                ]
+            }
+        },
         "dev_bank_add_100": {
             "trigger": "minecraft:tick",
             "conditions": {
@@ -132,6 +230,9 @@
             "verification",
             "open_toolsmith_main",
             "open_toolsmith_block",
+            "open_build_menu_defense", "choose_block_1", "choose_block_2", "choose_block_3", "choose_block_4",
+            "open_build_menu_supplies",
+            "open_build_menu_buff",
             "dev_bank_add_100",
             "dev_bank_remove_100",
             "dev_bank_add_1000",

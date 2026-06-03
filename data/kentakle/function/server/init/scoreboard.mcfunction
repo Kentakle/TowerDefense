@@ -5,6 +5,7 @@
     scoreboard objectives add readiness dummy
     scoreboard objectives add globalTrigger trigger
     scoreboard objectives add leave custom:leave_game
+    scoreboard objectives add open_build_menu dropped:wooden_axe
 #=======================================================================================================================================================================================================================================#
     # Основной скорборд с информацией который выводится игроку
     scoreboard objectives add info dummy

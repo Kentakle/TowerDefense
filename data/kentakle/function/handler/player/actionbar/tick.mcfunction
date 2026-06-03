@@ -1,9 +1,4 @@
 #=======================================================================================================================================================================================================================================#
-    gamerule max_block_modifications 999999999
-    gamerule advance_time false
-    gamerule spawn_phantoms false
-    gamerule pvp false
-    gamerule command_block_output false
-    gamerule send_command_feedback true
-    # gamerule natural_health_regeneration false
+    # Если игрок держит build_menu
+        execute if entity @s[predicate=kentakle:runtime/selected_build_menu] run function kentakle:handler/player/actionbar/build_menu/executer
 #=======================================================================================================================================================================================================================================#

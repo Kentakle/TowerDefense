@@ -1,12 +1,17 @@
 #=======================================================================================================================================================================================================================================#
     # Не дает ставить блоки за хаб
-    execute if function kentakle:game_state/game/runtime/tick/process_block_placement/splitter run function kentakle:game_state/game/runtime/tick/process_block_placement/on_block_break
+        execute if function kentakle:game_state/game/runtime/tick/process_block_placement/splitter run function kentakle:game_state/game/runtime/tick/process_block_placement/on_block_break
 #=======================================================================================================================================================================================================================================#
     # Управление hotbar игрока
-    execute as @a run function kentakle:handler/player/hotbar/runtime/tick
+        execute as @a run function kentakle:handler/player/hotbar/runtime/tick
 #=======================================================================================================================================================================================================================================#
     # Выдает доступ игроку к globalTrigger [schedule 1t]
         execute as @a run scoreboard players enable @s globalTrigger
+#=======================================================================================================================================================================================================================================#
+    # Ждет пока игрок выкенет build_axe для открытия build_menu
+        execute as @a[scores={open_build_menu=1..}] run function kentakle:handler/player/set_viewport/build_menu/main/get_storage
+    # Выводит игроку тип строительного блока из build_menu
+        execute as @a run function kentakle:handler/player/actionbar/tick
 #=======================================================================================================================================================================================================================================#
 
 schedule function kentakle:game_state/game/runtime/tick/tick 1t

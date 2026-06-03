@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Топор $(temp)-го уровня \n\n\n"
+            },
+            {
+                "text": "Выберите материал для стройки"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "pause": false,
+    "exit_action": {
+        "label": "Закрыть"
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": "Оборона",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Расходники",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        },
+        {
+            "label": "Бафы",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 102"
+            }
+        }
+    ]
+}

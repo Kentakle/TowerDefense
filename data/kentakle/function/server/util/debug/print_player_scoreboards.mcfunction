@@ -5,6 +5,7 @@ data modify storage kentakle:main temp set value [\
     {text:"\nleave:"},{score:{name:"@s",objective:"leave"}},\
     {text:"",color:"#f08f4e",extra:[{text:"\nglobalTrigger:"},{score:{name:"@s",objective:"globalTrigger"}}]},\
     {text:"\nreadiness:"},{score:{name:"@s",objective:"readiness"}},\
+    {text:"\nopen_build_menu:"},{score:{name:"@s",objective:"open_build_menu"}},\
     {text:"\n========================================="}\
 ]
 

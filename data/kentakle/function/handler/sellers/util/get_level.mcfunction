@@ -1,1 +1,0 @@
-$execute store result storage kentakle:main temp int 1 run scoreboard players get $(seller) main
