@@ -24,6 +24,6 @@
         }
     },
     "rewards": {
-        "function": "kentakle:handler/advancement/entry/verification/show_dialog"
+        "function": "kentakle:executer/advancement/entry/verification/show_dialog"
     }
 }

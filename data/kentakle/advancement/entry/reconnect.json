@@ -58,6 +58,6 @@
         ]
     ],
     "rewards": {
-        "function": "kentakle:handler/advancement/entry/branch"
+        "function": "kentakle:executer/advancement/entry/branch"
     }
 }

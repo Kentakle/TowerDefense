@@ -10,9 +10,9 @@
     "exit_action": {
         "label": "Вернуться на главную",
         "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kentakle:shop/toolsmith/seller/toolsmith"
-        }
+                "type": "run_command",
+                "command": "trigger globalTrigger set 4000"
+            }
     },
     "columns": 1,
     "actions": [

@@ -242,6 +242,6 @@
         ]
     ],
     "rewards": {
-        "function": "kentakle:handler/trigger/global_trigger"
+        "function": "kentakle:executer/trigger/global_trigger"
     }
 }

@@ -3,7 +3,7 @@
         function kentakle:game_state/lobby/tick/updater/data
         execute unless score #difficulty main = #difficulty_old main run function kentakle:game_state/lobby/tick/updater/storage
     # Управление hotbar игрока
-        execute as @a run function kentakle:handler/player/hotbar/lobby/tick
+        execute as @a run function kentakle:executer/player/hotbar/lobby/tick
 #=======================================================================================================================================================================================================================================#
     # Выдает доступ игроку к globalTrigger [schedule 1t]
         execute as @a run scoreboard players enable @s globalTrigger

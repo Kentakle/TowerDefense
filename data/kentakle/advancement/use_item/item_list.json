@@ -51,6 +51,6 @@
         ]
     ],
     "rewards": {
-        "function": "kentakle:handler/use_item/item_list"
+        "function": "kentakle:executer/use_item/item_list"
     }
 }

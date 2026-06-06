@@ -2,8 +2,8 @@
     # 
         data modify storage kentakle:seller toolsmith.block set value [{\
             name_1:"Грязь",health_1:10,arrmor_1:0,cost_1_1:10,cost_8_1:80,cost_16_1:160,\
-            name_2:"Булыжник",level_2_access:2,access_2_message:"Нужен 2 уровень продовца!",health_2:20,arrmor_2:4,cost_1_2:40,cost_8_2:320,cost_16_2:640,\
-            name_3:"Камень",level_3_access:3,access_3_message:"Нужен 3 уровень продовца!",health_3:30,arrmor_3:7,cost_1_3:110,cost_8_3:880,cost_16_3:1760,\
-            name_4:"Укрепленный камень",level_4_access:4,access_4_message:"Нужен 4 уровень продовца!",health_3:30,arrmor_3:7,cost_1_3:110,cost_8_3:880,cost_16_3:1760,\
+            name_2:"Булыжник",level_2_access:2,access_2_message:"{\"text\":\"\n\nНужен 2 уровень продовца!\"}",health_2:20,arrmor_2:4,cost_1_2:40,cost_8_2:320,cost_16_2:640,\
+            name_3:"Камень",level_3_access:3,access_3_message:"{\"text\":\"\n\nНужен 3 уровень продовца!\"}",health_3:30,arrmor_3:7,cost_1_3:110,cost_8_3:880,cost_16_3:1760,\
+            name_4:"Укрепленный камень",level_4_access:4,access_4_message:"{\"text\":\"\n\nНужен 4 уровень продовца!\"}",health_3:30,arrmor_3:7,cost_1_3:110,cost_8_3:880,cost_16_3:1760,\
         }]
 #=======================================================================================================================================================================================================================================#

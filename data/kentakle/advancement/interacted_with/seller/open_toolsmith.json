@@ -16,6 +16,6 @@
         }
     },
     "rewards": {
-        "function": "kentakle:handler/player/interacted_with_entity/seller/open_main_viewport/toolsmith"
+        "function": "kentakle:executer/player/interacted_with_entity/seller/open_main_viewport/toolsmith"
     }
 }
