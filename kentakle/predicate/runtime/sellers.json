@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "open_toolsmith_main":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "open_toolsmith_block":true
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "pufferfish",
+                    "modifier": [
+                        {
+                            "type": "set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Начинает волну",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "Описание...",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

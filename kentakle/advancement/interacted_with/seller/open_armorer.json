@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "armorer": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:entity_type": "#kentakle:runtime/seller",
+                        "minecraft:nbt": {
+                            "Tags": [
+                                "armorer"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kentakle:executer/player/interacted_with_entity/seller/open_main_viewport/armorer"
+    }
+}
