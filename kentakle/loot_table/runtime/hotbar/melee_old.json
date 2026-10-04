@@ -1,0 +1,145 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_sword",
+                    "modifier": [
+                        {
+                            "type": "set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "text": "Основной урон: ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "weapon_damage.melee.main"
+                                        },
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "# Сила урона подтипа",
+                                    "color": "#666565",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "{type_1}: ",
+                                        "color": "#64bccc",
+                                        "italic": false
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "weapon_damage.melee.type_1"
+                                        },
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "{type_2}: ",
+                                        "color": "#64bccc",
+                                        "italic": false
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "weapon_damage.melee.type_2"
+                                        },
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "{type_3}: ",
+                                        "color": "#64bccc",
+                                        "italic": false
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "weapon_damage.melee.type_3"
+                                        },
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "{type_4}: ",
+                                        "color": "#64bccc",
+                                        "italic": false
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "weapon_damage.melee.type_4"
+                                        },
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:attack_damage",
+                                    "id": "melee",
+                                    "amount": 0,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "type": "set_custom_data",
+                            "tag": {
+                                "type_1": 0,
+                                "type_2": 0,
+                                "type_3": 0,
+                                "type_4": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

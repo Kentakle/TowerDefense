@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:mod",
+    "left": {
+        "type": "minecraft:score",
+        "target": {
+            "type": "fixed",
+            "name": "#wave"
+        },
+        "score": "main"
+    },
+    "right": 10
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:div",
+    "left": {
+        "type": "minecraft:score",
+        "target": {
+            "type": "minecraft:fixed",
+            "name": "#wave_time"
+        },
+        "score": "main"
+    },
+    "right": 1200
+}

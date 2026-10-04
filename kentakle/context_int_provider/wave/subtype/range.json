@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:number_dispatcher",
+    "cases": [
+        {
+            "condition": {
+                "type": "minecraft:int_value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#difficulty"
+                    },
+                    "score": "main"
+                },
+                "test": 1
+            },
+            "value": {
+                "type": "minecraft:weighted_list",
+                "distribution": [
+                    {
+                        "weight": 90,
+                        "data": 1
+                    },
+                    {
+                        "weight": 10,
+                        "data": 2
+                    }
+                ]
+            }
+        },
+        {
+            "condition": {
+                "type": "minecraft:int_value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#difficulty"
+                    },
+                    "score": "main"
+                },
+                "test": 2
+            },
+            "value": {
+                "type": "minecraft:weighted_list",
+                "distribution": [
+                    {
+                        "weight": 80,
+                        "data": 1
+                    },
+                    {
+                        "weight": 20,
+                        "data": 2
+                    }
+                ]
+            }
+        },
+        {
+            "condition": {
+                "type": "minecraft:int_value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#difficulty"
+                    },
+                    "score": "main"
+                },
+                "test": 3
+            },
+            "value": {
+                "type": "minecraft:weighted_list",
+                "distribution": [
+                    {
+                        "weight": 70,
+                        "data": 1
+                    },
+                    {
+                        "weight": 30,
+                        "data": 2
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Меню разработчика"
+            },
+            {
+                "text": "\n\nset_wave"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "after_action": "none",
+    "pause": false,
+    "exit_action": {
+        "label": "Вернуться на главную",
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kentakle:developer/main"
+        }
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": "+1 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1050"
+            }
+        },
+        {
+            "label": "-1 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1051"
+            }
+        },
+        {
+            "label": "4 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1052"
+            }
+        },
+        {
+            "label": "5 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1053"
+            }
+        },
+        {
+            "label": "9 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1054"
+            }
+        },
+        {
+            "label": "10 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1055"
+            }
+        },
+        {
+            "label": "99 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1056"
+            }
+        },
+        {
+            "label": "100 wave",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1057"
+            }
+        }
+    ]
+}

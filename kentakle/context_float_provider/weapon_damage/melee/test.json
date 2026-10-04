@@ -1,0 +1,113 @@
+{
+    "type": "minecraft:sub",
+    "left": {
+        "type": "minecraft:storage",
+        "storage": "kentakle:main",
+        "path": "temp.victim_health"
+    },
+    "right": {
+        "type": "minecraft:sub",
+        "left": {
+            "type": "minecraft:storage",
+            "storage": "kentakle:main",
+            "path": "temp.player_melee_damage"
+        },
+        "right": {
+            "type": "minecraft:mul",
+            "inputs": [
+                {
+                    "type": "minecraft:storage",
+                    "storage": "kentakle:main",
+                    "path": "temp.player_melee_damage"
+                },
+                {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                        {
+                            "type": "minecraft:add",
+                            "inputs": [
+                                {
+                                    "type": "max",
+                                    "inputs": [
+                                        {
+                                            "type": "minecraft:sub",
+                                            "left": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.victim_decrease_1"
+                                            },
+                                            "right": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.player_melee_decrease_1"
+                                            }
+                                        },
+                                        0
+                                    ]
+                                },
+                                {
+                                    "type": "max",
+                                    "inputs": [
+                                        {
+                                            "type": "minecraft:sub",
+                                            "left": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.victim_decrease_2"
+                                            },
+                                            "right": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.player_melee_decrease_2"
+                                            }
+                                        },
+                                        0
+                                    ]
+                                },
+                                {
+                                    "type": "max",
+                                    "inputs": [
+                                        {
+                                            "type": "minecraft:sub",
+                                            "left": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.victim_decrease_3"
+                                            },
+                                            "right": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.player_melee_decrease_3"
+                                            }
+                                        },
+                                        0
+                                    ]
+                                },
+                                {
+                                    "type": "max",
+                                    "inputs": [
+                                        {
+                                            "type": "minecraft:sub",
+                                            "left": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.victim_decrease_4"
+                                            },
+                                            "right": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.player_melee_decrease_4"
+                                            }
+                                        },
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        0.01
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -5,8 +5,15 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "wooden_sword",
+                    "name": "stick",
                     "modifier": [
+                        {
+                            "type": "set_name",
+                            "name": {
+                                "text": "Ближний бой",
+                                "italic": false
+                            }
+                        },
                         {
                             "type": "set_lore",
                             "mode": "replace_all",
@@ -14,15 +21,117 @@
                                 {
                                     "text": ""
                                 },
+                                [
+                                    {
+                                        "text": "Основной урон: ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "main_damage",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
                                 {
-                                    "text": "Уровень 1",
-                                    "italic": false
+                                    "text": ""
                                 },
                                 {
-                                    "text": "Описание...",
+                                    "text": "# Снижение сопротивления",
+                                    "color": "#666565",
                                     "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "Энергия: ",
+                                        "color": "#FFD43B",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "damage_type_1",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Эфир: ",
+                                        "color": "#5CE1E6",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "damage_type_2",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Искажение: ",
+                                        "color": "#A855F7",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "damage_type_3",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "Пустота: ",
+                                        "color": "#D8D5FF",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "damage_type_4",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "%",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "[СДЕЛАТЬ СКИНЫ]"
                                 }
                             ]
+                        },
+                        {
+                            "type": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:attack_damage",
+                                    "id": "melee",
+                                    "amount": 0,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "wooden_sword"
+                            }
                         }
                     ]
                 }

@@ -30,6 +30,13 @@
         },
         {
             "label": "lobby"
+        },
+        {
+            "label": "summon",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:developer/entity_control/main"
+            }
         }
     ]
 }

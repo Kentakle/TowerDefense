@@ -1,4 +1,3 @@
-execute if entity @s[tag=!dev] run return run tellraw @s [{storage:"kentakle:notification",nbt:"notification_1",interpret:true}]
+execute if entity @s[tag=!dev] run return run tellraw @s [{text:"[server] access denied",color:red}]
 
-scoreboard players set #dialogIndex main 1001
-function kentakle:dialog/show_dialog_by_index
+dialog show @s kentakle:developer/main

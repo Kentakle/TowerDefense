@@ -1,0 +1,2 @@
+$execute if score #temp.mob_mob_subtype main matches 1 run summon zombie $(cord_x) 0 $(cord_z) {NoAI:false,Tags:["not_completed","wave_enemy"]}
+$execute if score #temp.mob_mob_subtype main matches 2 run summon husk $(cord_x) 0 $(cord_z) {NoAI:false,Tags:["not_completed","wave_enemy"]}

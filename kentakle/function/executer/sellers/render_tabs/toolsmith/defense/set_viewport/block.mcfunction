@@ -31,9 +31,3 @@ $dialog show @s {"type": "minecraft:multi_action","title": "","body": {"type": "
         "action": {"type": "run_command","command": "trigger globalTrigger set 102"}},\
         \
         ]}
-
-# $say $(access_2_message)
-# $tellraw @a [$(access_2_message)]
-# $dialog show @s {"type": "minecraft:multi_action","title": "","body": {"type": "minecraft:plain_message","contents": [{"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text": "Выберите уровень блоков"}]},"can_close_with_escape": true,"after_action": "none","pause": false,\
-#     "exit_action": {"label": "Вернуться на главную","action": {"type": "run_command","command":"trigger globalTrigger set 4000"}},"columns": 3,\
-#     "actions": $(out)}

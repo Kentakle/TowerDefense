@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "hurt_entity_by_sword": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "slots": {
+                            "weapon.mainhand": {
+                                "items": "#kentakle:runtime/melee"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kentakle:executer/player/action/hurt_entity/by_sword/main"
+    }
+}

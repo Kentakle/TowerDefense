@@ -1,0 +1,1 @@
+return run function kentakle:server/mobs_data/melee/assembly with storage kentakle:main temp

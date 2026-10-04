@@ -1,6 +1,6 @@
 #=======================================================================================================================================================================================================================================#
     # Не дает ставить блоки за хаб
-        execute if function kentakle:game_state/game/runtime/tick/process_block_placement/splitter run function kentakle:game_state/game/runtime/tick/process_block_placement/on_block_break
+        # execute if function kentakle:game_state/game/runtime/tick/process_block_placement/splitter run function kentakle:game_state/game/runtime/tick/process_block_placement/on_block_break
 #=======================================================================================================================================================================================================================================#
     # hotbar tick
         execute as @a run function kentakle:executer/player/hotbar/runtime/tick
@@ -10,8 +10,11 @@
     # Выдает доступ игроку к globalTrigger [schedule 1t]
         execute as @a run scoreboard players enable @s globalTrigger
 #=======================================================================================================================================================================================================================================#
-    # Ждет пока игрок выкенет build_axe для открытия build_menu
+    # Ждет пока игрок выкенет build_axe для открытия build_menu                  !!!!!!! перенести в hotbar tick
         execute as @a[scores={open_build_menu=1..}] run function kentakle:executer/player/set_viewport/build_menu/main/get_storage
+#=======================================================================================================================================================================================================================================#
+    # Активно во время волны
+        execute if score #wave_state main matches 1 run function kentakle:game_state/game/runtime/tick/wave/in_progress/tick
 #=======================================================================================================================================================================================================================================#
 
 schedule function kentakle:game_state/game/runtime/tick/tick 1t

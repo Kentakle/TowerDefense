@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "Меню разработчика"
+            },
+            {
+                "text": "\n\nEntity_control"
+            }
+        ]
+    },
+    "can_close_with_escape": true,
+    "after_action": "none",
+    "pause": false,
+    "exit_action": {
+        "label": "Вернуться на главную",
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kentakle:developer/main"
+        }
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": "summon_melee",
+            "action": {
+                "type": "run_command",
+                "command": "trigger globalTrigger set 1120"
+            }
+        }
+    ]
+}

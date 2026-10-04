@@ -1,0 +1,1 @@
+$data modify storage kentakle:main players_data.$(id) set from storage kentakle:main player_data

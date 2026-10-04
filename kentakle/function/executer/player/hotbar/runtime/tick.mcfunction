@@ -4,13 +4,11 @@
     # Выдача и фиксация дальнего оружия
     execute unless items entity @s hotbar.0 #kentakle:runtime/range run function kentakle:executer/player/hotbar/runtime/list/range
     # Выдача и фиксация ближнего оружия
-    execute unless items entity @s hotbar.1 #kentakle:runtime/melee run function kentakle:executer/player/hotbar/runtime/list/melee
+    execute unless items entity @s hotbar.1 #kentakle:runtime/melee run function kentakle:executer/player/hotbar/runtime/list/melee/item
     # Выдача и фиксация магического оружия
     execute unless items entity @s hotbar.2 #kentakle:runtime/magic run function kentakle:executer/player/hotbar/runtime/list/magic
     # Выдача и фиксация начало волны
-    execute unless items entity @s hotbar.4 #kentakle:runtime/start_wave run function kentakle:executer/player/hotbar/runtime/list/start_wave
+    execute unless items entity @s hotbar.4 #kentakle:runtime/start_wave if score #wave_state main matches 0 run function kentakle:executer/player/hotbar/runtime/list/start_wave
     # Выдача и фиксация строительный топор
-    execute unless items entity @s hotbar.6 #kentakle:runtime/build_axe run function kentakle:executer/player/hotbar/runtime/list/build_axe
-#=======================================================================================================================================================================================================================================#
-    
+    execute unless items entity @s hotbar.6 #kentakle:runtime/build_axe if score #wave_state main matches 0 run function kentakle:executer/player/hotbar/runtime/list/build_axe
 #=======================================================================================================================================================================================================================================#

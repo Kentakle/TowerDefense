@@ -30,6 +30,13 @@
                 "type": "show_dialog",
                 "dialog": "kentakle:developer/runtime/bank"
             }
+        },
+        {
+            "label": "set_wave",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kentakle:developer/runtime/set_wave"
+            }
         }
     ]
 }

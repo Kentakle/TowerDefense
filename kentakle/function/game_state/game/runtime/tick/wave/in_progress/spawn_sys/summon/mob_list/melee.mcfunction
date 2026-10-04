@@ -1,0 +1,2 @@
+$execute if score #temp.mob_subtype main matches 1 run summon zombie $(cord_x) 0 $(cord_z) {$(melee)}
+$execute if score #temp.mob_subtype main matches 2 run summon husk $(cord_x) 0 $(cord_z) {$(melee)}

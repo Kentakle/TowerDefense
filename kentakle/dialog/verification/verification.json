@@ -9,7 +9,7 @@
         {
             "type": "plain_message",
             "contents": {
-                "text": "Версия: 0.0.1",
+                "text": "Версия: перейти на inline",
                 "hover_event": {
                     "action": "show_text",
                     "value": "БОБА"

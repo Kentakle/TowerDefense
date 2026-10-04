@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:weighted_list",
+  "distribution": [
+    {
+      "data": {
+        "type": "minecraft:uniform",
+        "min": -100,
+        "max": -35
+      },
+      "weight": 1
+    },
+    {
+      "data": {
+        "type": "minecraft:uniform",
+        "min": 35,
+        "max": 100
+      },
+      "weight": 1
+    }
+  ]
+}

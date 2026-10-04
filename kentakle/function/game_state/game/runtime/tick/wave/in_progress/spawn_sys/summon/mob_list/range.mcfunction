@@ -1,0 +1,2 @@
+$execute if score #temp.mob_mob_subtype main matches 1 run summon skeleton $(cord_x) 0 $(cord_z) {}
+$execute if score #temp.mob_mob_subtype main matches 2 run summon stray $(cord_x) 0 $(cord_z) {NoAI:false,data:[{Armmor:1,Health:1}],Tags:["not_completed","wave_enemy"]}

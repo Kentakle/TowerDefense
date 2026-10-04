@@ -19,10 +19,20 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "Описание...",
+                                    "text": "Достаточно одного голоса для активации",
                                     "italic": false
                                 }
                             ]
+                        },
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "consumable": {
+                                    "consume_seconds": 0,
+                                    "sound": "intentionally_empty",
+                                    "has_consume_particles": false
+                                }
+                            }
                         }
                     ]
                 }

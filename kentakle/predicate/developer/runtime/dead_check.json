@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:float_value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "kentakle:main",
+        "path": "temp.victim_health"
+    },
+    "test": {
+        "max": 0
+    }
+}

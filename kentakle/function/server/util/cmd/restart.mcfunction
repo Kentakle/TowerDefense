@@ -10,6 +10,8 @@ scoreboard players set #difficulty main 2
 scoreboard players set @a readiness 0
 scoreboard players set #again main 1
 scoreboard players set #starting main 0
+execute store result storage kentakle:main wave float 1 run scoreboard players set #wave main 1
+
 #=======================================================================================================================================================================================================================================#
     # Обнуление уровня торговцев
         scoreboard players set #toolsmith_lvl main 1
@@ -19,6 +21,7 @@ scoreboard players set #starting main 0
 
 schedule clear kentakle:game_state/game/runtime/tick/tick
 schedule clear kentakle:game_state/game/runtime/scoreboard/time/increment_value
+schedule clear kentakle:game_state/game/runtime/tick/wave/in_progress/spawn_sys/scheduler
 function kentakle:game_state/lobby/tick/tick
 
 tp @a 0 0 0

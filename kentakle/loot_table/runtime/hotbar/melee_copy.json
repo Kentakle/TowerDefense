@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_sword",
+                    "modifier": [
+                        {
+                            "type": "set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "Основной урон: ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "1",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+scoreboard players add *next_holder_id id 1

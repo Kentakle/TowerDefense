@@ -1,8 +1,8 @@
 #=======================================================================================================================================================================================================================================#
-    data modify storage kentakle:main ver set value "0.0.6"
     data modify storage kentakle:main temp set value {}
 
     data modify storage kentakle:main info set value [{},{text:""},{text:"Время: "},{text:""},{text:"Банк: "},{text:""},{text:""}]
+    data modify storage kentakle:main summon_mob_date set value {cord_x:0,cord_y:0,melee:"NoAI:true,data:{Armmor:0,Health:1},Tags:[\"not_completed\",\"wave_enemy\"]"}
 
     data modify storage kentakle:central_info difficulty set value [{},{text:"ЛЕГКО",color:"green"},{text:"НОРМАЛЬНО",color:"gold"},{text:"СЛОЖНО",color:"red"}]
     data modify storage kentakle:central_info health set value [{},{text:"0.7x"},{text:"1x"},{text:"1.3x"}]

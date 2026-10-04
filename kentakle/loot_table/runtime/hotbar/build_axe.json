@@ -5,131 +5,50 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "wooden_axe",
-                    "modifier": [
+                    "name": "bee_spawn_egg"
+                    
+                }
+            ],
+            "modifier": [
+                {
+                    "type": "set_name",
+                    "name": [
                         {
-                            "type": "set_name",
-                            "name": [
-                                {
-                                    "text": "Строительный топор",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "type": "set_lore",
-                            "mode": "replace_all",
-                            "lore": [
-                                {
-                                    "text": ""
-                                },
-                                {
-                                    "text": "Активен только во время подготовки",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "type": "set_components",
-                            "components": {
-                                "item_model": "stone_axe"
-                            },
-                            "condition": 
-                                {
-                                    "type": "value_check",
-                                    "value": {
-                                        "type": "score",
-                                        "target": {
-                                            "type": "fixed",
-                                            "name": "#toolsmith_lvl"
-                                        },
-                                        "score": "main"
-                                    },
-                                    "range": 2
-                                }
-                            
-                        },
-                        {
-                            "type": "set_components",
-                            "components": {
-                                "item_model": "iron_axe"
-                            },
-                            "condition": 
-                                {
-                                    "type": "value_check",
-                                    "value": {
-                                        "type": "score",
-                                        "target": {
-                                            "type": "fixed",
-                                            "name": "#toolsmith_lvl"
-                                        },
-                                        "score": "main"
-                                    },
-                                    "range": 3
-                                }
-                            
-                        },
-                        {
-                            "type": "set_components",
-                            "components": {
-                                "item_model": "golden_axe"
-                            },
-                            "condition": 
-                                {
-                                    "type": "value_check",
-                                    "value": {
-                                        "type": "score",
-                                        "target": {
-                                            "type": "fixed",
-                                            "name": "#toolsmith_lvl"
-                                        },
-                                        "score": "main"
-                                    },
-                                    "range": 4
-                                }
-                            
-                        },
-                        {
-                            "type": "set_components",
-                            "components": {
-                                "item_model": "diamond_axe"
-                            },
-                            "condition": 
-                                {
-                                    "type": "value_check",
-                                    "value": {
-                                        "type": "score",
-                                        "target": {
-                                            "type": "fixed",
-                                            "name": "#toolsmith_lvl"
-                                        },
-                                        "score": "main"
-                                    },
-                                    "range": 5
-                                }
-                            
-                        },
-                        {
-                            "type": "set_components",
-                            "components": {
-                                "item_model": "netherite_axe"
-                            },
-                            "condition": 
-                                {
-                                    "type": "value_check",
-                                    "value": {
-                                        "type": "score",
-                                        "target": {
-                                            "type": "fixed",
-                                            "name": "#toolsmith_lvl"
-                                        },
-                                        "score": "main"
-                                    },
-                                    "range": 6
-                                }
-                            
+                            "text": "Строительный топор",
+                            "italic": false
                         }
                     ]
+                },
+                {
+                    "type": "set_lore",
+                    "mode": "replace_all",
+                    "lore": [
+                        {
+                            "text": ""
+                        },
+                        {
+                            "text": "Активен только во время подготовки",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "type": "set_components",
+                    "components": {
+                        "entity_data": {
+                            "id": "marker",
+                            "Tags": [
+                                "point_for_block"
+                            ]
+                        },
+                        "can_place_on": {
+                            "blocks": "#kentakle:runtime/can_place_on"
+                        },
+                        "minecraft:use_cooldown": {
+                            "seconds": 0.3,
+                            "cooldown_group": "kentakle:build_axe"
+                        }
+                    }
                 }
             ]
         }

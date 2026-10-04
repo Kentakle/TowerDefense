@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_add_100":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_remove_100":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_add_1000":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_remove_1000":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_add_10000":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "dev_bank_remove_10000":true
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

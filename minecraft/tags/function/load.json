@@ -2,7 +2,7 @@
     "values": [
         "kentakle:server/init/gamerule",
         "kentakle:server/init/scoreboard",
-        "kentakle:server/init/notification",
-        "kentakle:server/init/storage"
+        "kentakle:server/init/storage",
+        "kentakle:server/init/bossbar"
     ]
 }

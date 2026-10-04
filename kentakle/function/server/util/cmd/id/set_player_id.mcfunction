@@ -1,0 +1,1 @@
+scoreboard players operation @s id += *next_holder_id id

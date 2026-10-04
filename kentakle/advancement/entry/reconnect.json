@@ -8,10 +8,7 @@
                     "entity": "this",
                     "scores": {
                         "verified": 1,
-                        "leave": {
-                            "min": 1,
-                            "max": 1000
-                        }
+                        "leave": {}
                     }
                 }
             }
@@ -26,10 +23,7 @@
                             "type": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "leave": {
-                                    "min": 1,
-                                    "max": 1000
-                                }
+                                "leave": {}
                             }
                         },
                         {
@@ -54,6 +48,6 @@
         ]
     ],
     "rewards": {
-        "function": "kentakle:executer/advancement/entry/branch"
+        "function": "kentakle:executer/advancement/entry/check_criteria"
     }
 }

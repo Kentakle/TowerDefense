@@ -1,0 +1,1 @@
+return run data modify block 0 -7 0 Items[].components."minecraft:lore"[5].extra[0].text set string storage kentakle:main temp.melee_decrease_2

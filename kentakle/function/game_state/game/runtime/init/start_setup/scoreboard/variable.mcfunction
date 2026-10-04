@@ -5,6 +5,12 @@
         execute store result score #hh main run data get storage kentakle:runtime startTime.hh
     # Обнуляет банка перед началом игры
         scoreboard players reset #bank main
+    #
+        scoreboard players set @a weapon.melee.damage 2
+        scoreboard players set @a weapon.melee.decrease_1 0
+        scoreboard players set @a weapon.melee.decrease_2 0
+        scoreboard players set @a weapon.melee.decrease_3 0
+        scoreboard players set @a weapon.melee.decrease_4 0
 #=======================================================================================================================================================================================================================================#
     # Выставление стартового значения банка
     # Использовать всегда в паре для добавления значения

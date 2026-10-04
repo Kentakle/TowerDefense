@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "choose_block_1":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "choose_block_2":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "choose_block_3":true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific/player": {
+                    "advancements": {
+                        "kentakle:global_trigger/triggers": {
+                            "choose_block_4":true
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

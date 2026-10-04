@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:div",
+    "left": {
+        "type": "minecraft:add",
+        "inputs": [
+            {
+                "type": "minecraft:storage",
+                "storage": "kentakle:const",
+                "path": "health_multiplier.health_base"
+            },
+            {
+                "type": "minecraft:mul",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "kentakle:const",
+                        "path": "health_multiplier.A"
+                    },
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "kentakle:main",
+                        "path": "wave"
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:mul",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "kentakle:const",
+                        "path": "health_multiplier.B"
+                    },
+                    {
+                        "type": "minecraft:pow",
+                        "base": {
+                            "type": "minecraft:storage",
+                            "storage": "kentakle:main",
+                            "path": "wave"
+                        },
+                        "exponent": {
+                            "type": "minecraft:storage",
+                            "storage": "kentakle:const",
+                            "path": "health_multiplier.p"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "right": 1.0
+}
