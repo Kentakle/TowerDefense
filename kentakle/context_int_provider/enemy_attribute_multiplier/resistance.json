@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:conditional",
+    "condition": {
+        "type": "minecraft:int_value_check",
+        "value": {
+            "type": "minecraft:storage",
+            "storage": "kentakle:main",
+            "path": "wave"
+        },
+        "test": {
+            "min": 1,
+            "max": 19
+        }
+    },
+    "on_true": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 19
+    },
+    "on_false": {
+        "type": "minecraft:conditional",
+        "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "kentakle:main",
+                "path": "wave"
+            },
+            "test": {
+                "min": 20,
+                "max": 39
+            }
+        },
+        "on_true": {
+            "type": "minecraft:uniform",
+            "min": 20,
+            "max": 39
+        },
+        "on_false": {
+            "type": "minecraft:conditional",
+            "condition": {
+                "type": "minecraft:int_value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "kentakle:main",
+                    "path": "wave"
+                },
+                "test": {
+                    "min": 40,
+                    "max": 59
+                }
+            },
+            "on_true": {
+                "type": "minecraft:uniform",
+                "min": 60,
+                "max": 79
+            },
+            "on_false": {
+                "type": "minecraft:conditional",
+                "condition": {
+                    "type": "minecraft:int_value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "kentakle:main",
+                        "path": "wave"
+                    },
+                    "test": {
+                        "min": 80,
+                        "max": 99
+                    }
+                },
+                "on_true": {
+                    "type": "minecraft:uniform",
+                    "min": 80,
+                    "max": 99
+                },
+                "on_false": 100
+            }
+        }
+    }
+}

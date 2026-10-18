@@ -12,12 +12,16 @@
         scoreboard objectives add choose_block_id dummy
 #=======================================================================================================================================================================================================================================#
     # Типы оружия и уровень прокачки оружия каждого игрока отдельно
-    # melee
-        scoreboard objectives add weapon.melee.damage dummy
-        scoreboard objectives add weapon.melee.decrease_1 dummy
-        scoreboard objectives add weapon.melee.decrease_2 dummy
-        scoreboard objectives add weapon.melee.decrease_3 dummy
-        scoreboard objectives add weapon.melee.decrease_4 dummy
+    # damage
+        scoreboard objectives add damage.melee dummy
+        scoreboard objectives add damage.range dummy
+        scoreboard objectives add damage.magic dummy
+        scoreboard objectives add damage.trap dummy
+    # resistance
+        scoreboard objectives add resistance.melee dummy
+        scoreboard objectives add resistance.range dummy
+        scoreboard objectives add resistance.magic dummy
+        scoreboard objectives add resistance.trap dummy
 #=======================================================================================================================================================================================================================================#
     # Основной скорборд с информацией который выводится игроку
         scoreboard objectives add info dummy

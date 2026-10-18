@@ -1,0 +1,56 @@
+{
+    "type": "minecraft:sub",
+    "left": {
+        "type": "minecraft:storage",
+        "storage": "kentakle:main",
+        "path": "temp.victim_health"
+    },
+    "right": {
+        "type": "minecraft:sub",
+        "left": {
+            "type": "minecraft:storage",
+            "storage": "kentakle:main",
+            "path": "temp.player_melee_damage"
+        },
+        "right": {
+            "type": "minecraft:mul",
+            "inputs": [
+                {
+                    "type": "minecraft:storage",
+                    "storage": "kentakle:main",
+                    "path": "temp.player_melee_damage"
+                },
+                {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                        {
+                            "type": "minecraft:add",
+                            "inputs": [
+                                {
+                                    "type": "max",
+                                    "inputs": [
+                                        {
+                                            "type": "minecraft:sub",
+                                            "left": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.victim_resistance.melee"
+                                            },
+                                            "right": {
+                                                "type": "minecraft:storage",
+                                                "storage": "kentakle:main",
+                                                "path": "temp.player_melee_resistance_1"
+                                            }
+                                        },
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        0.01
+                    ]
+                }
+            ]
+        }
+    }
+}

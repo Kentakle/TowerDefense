@@ -4,12 +4,10 @@
     # Получаем HP жертвы
         data modify storage kentakle:main temp.victim_health set from entity @s data.Health
     # Получаем сопротивление жертвы
-        execute store result storage kentakle:main temp.victim_decrease_1 int 1 run scoreboard players get @s weapon.melee.decrease_1
-        execute store result storage kentakle:main temp.victim_decrease_2 int 1 run scoreboard players get @s weapon.melee.decrease_2
-        execute store result storage kentakle:main temp.victim_decrease_3 int 1 run scoreboard players get @s weapon.melee.decrease_3
-        execute store result storage kentakle:main temp.victim_decrease_4 int 1 run scoreboard players get @s weapon.melee.decrease_4
+        function kentakle:executer/player/action/hurt_entity/get_victim_resistance
     # Считаем и записываем нанесеный урон
-        data modify storage kentakle:main temp.victim_health set compute default float kentakle:weapon_damage/melee/test
+        data modify storage kentakle:main temp.victim_health set compute default float kentakle:weapon_damage/melee/calc
+#=======================================================================================================================================================================================================================================#
     # Проверяем если HP <= 0 убиваем
         execute if predicate kentakle:developer/runtime/dead_check run return run kill @s
     # Если HP не <= 0 приравниваем его мобу

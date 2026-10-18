@@ -34,12 +34,12 @@
                                             "left": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.victim_decrease_1"
+                                                "path": "temp.victim_resistance.range"
                                             },
                                             "right": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.player_melee_decrease_1"
+                                                "path": "temp.player_melee_resistance_1"
                                             }
                                         },
                                         0
@@ -53,12 +53,12 @@
                                             "left": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.victim_decrease_2"
+                                                "path": "temp.victim_resistance_2"
                                             },
                                             "right": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.player_melee_decrease_2"
+                                                "path": "temp.player_melee_resistance_2"
                                             }
                                         },
                                         0
@@ -72,12 +72,12 @@
                                             "left": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.victim_decrease_3"
+                                                "path": "temp.victim_resistance_3"
                                             },
                                             "right": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.player_melee_decrease_3"
+                                                "path": "temp.player_melee_resistance_3"
                                             }
                                         },
                                         0
@@ -91,12 +91,12 @@
                                             "left": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.victim_decrease_4"
+                                                "path": "temp.victim_resistance_4"
                                             },
                                             "right": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.player_melee_decrease_4"
+                                                "path": "temp.player_melee_resistance_4"
                                             }
                                         },
                                         0

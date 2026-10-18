@@ -1,20 +1,21 @@
 {
-  "type": "weighted_list",
-  "distribution": [
-    {
-      "data": 1,
-      "weight": 45
-    },
-    {
-      "data": 2,
-      "weight": 45
-    },
-    {
-      "data": 3,
-      "weight": 5
-    },{
-      "data": 4,
-      "weight": 5
-    }
-  ]
+	"type": "weighted_list",
+	"distribution": [
+		{
+			"data": 1,
+			"weight": 45
+		},
+		{
+			"data": 2,
+			"weight": 45
+		},
+		{
+			"data": 3,
+			"weight": 5
+		},
+		{
+			"data": 4,
+			"weight": 5
+		}
+	]
 }

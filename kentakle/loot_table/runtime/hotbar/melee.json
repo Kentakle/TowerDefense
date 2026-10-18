@@ -43,7 +43,7 @@
                                 },
                                 [
                                     {
-                                        "text": "Энергия: ",
+                                        "text": "Снижает на ",
                                         "color": "#FFD43B",
                                         "italic": false
                                     },
@@ -56,56 +56,12 @@
                                         "italic": false
                                     }
                                 ],
-                                [
-                                    {
-                                        "text": "Эфир: ",
-                                        "color": "#5CE1E6",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "damage_type_2",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "%",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "text": "Искажение: ",
-                                        "color": "#A855F7",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "damage_type_3",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "%",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "text": "Пустота: ",
-                                        "color": "#D8D5FF",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "damage_type_4",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "%",
-                                        "italic": false
-                                    }
-                                ],
                                 {
                                     "text": ""
                                 },
                                 {
-                                    "text": "[СДЕЛАТЬ СКИНЫ]"
+                                    "text": "[СДЕЛАТЬ СКИНЫ]",
+                                    "italic": false
                                 }
                             ]
                         },

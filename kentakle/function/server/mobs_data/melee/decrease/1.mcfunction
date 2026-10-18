@@ -1,0 +1,1 @@
+scoreboard players operation #temp main = @s resistance.melee
