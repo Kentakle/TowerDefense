@@ -1,0 +1,34 @@
+{
+    "mc-dp-icons.loadFunctionNames": [],
+    "mc-dp-icons.crownedFunctionsNames": [
+        "use_item/list",
+        "build_axe/start",
+        "trigger/global_trigger",
+        "build_axe/check_entity_collision",
+        "mobs_data/check_type"
+    ],
+    "mc-dp-icons.crownedLoadFunctionsNames": [
+        "init/const",
+        "init/gamerule",
+        "init/notification",
+        "init/scoreboard",
+        "init/sellers",
+        "init/storage",
+        "wave/init",
+        "init/const copy",
+        "init/bossbar",
+        "init/mob_data",
+        "by_sword/main"
+    ],
+    "mc-dp-icons.tickFunctionNames": [
+        "wave/tick",
+        "countdown/tick",
+        "in_progress/tick",
+        "spawn_sys/tick"
+    ],
+    "mc-dp-icons.crownedTickFunctionsNames": [
+        "tick/tick",
+        "spawn_sys/schedule",
+        "spawn_sys/scheduler"
+    ]
+}

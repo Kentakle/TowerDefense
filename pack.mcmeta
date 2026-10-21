@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "description": "",
+    "max_format": 123,
+    "min_format": 123
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "recipe"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement"
+      }
+    ]
+  }
+}
