@@ -1,7 +1,7 @@
 #=======================================================================================================================================================================================================================================#
     #
         execute store result storage kentakle:main temp.player_current_damage int 1 run scoreboard players get @s damage.melee
-        # execute store result storage kentakle:main temp.player_melee_resistance_1 int 1 run scoreboard players get @s resistance.melee
+        execute store result storage kentakle:main temp.melee_resistance int 1 run scoreboard players get @s resistance.melee
         # execute store result storage kentakle:main temp.player_melee_resistance_2 int 1 run scoreboard players get @s damage.range
         # execute store result storage kentakle:main temp.player_melee_resistance_3 int 1 run scoreboard players get @s damage.magic
         # execute store result storage kentakle:main temp.player_melee_resistance_4 int 1 run scoreboard players get @s damage.trap

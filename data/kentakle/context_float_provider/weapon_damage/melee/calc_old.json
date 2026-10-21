@@ -34,7 +34,7 @@
                                             "left": {
                                                 "type": "minecraft:storage",
                                                 "storage": "kentakle:main",
-                                                "path": "temp.victim_resistance.range"
+                                                "path": "temp.victim_resistance.melee"
                                             },
                                             "right": {
                                                 "type": "minecraft:storage",

@@ -18,7 +18,9 @@
         "init/const copy",
         "init/bossbar",
         "init/mob_data",
-        "by_sword/main"
+        "by_sword/main",
+        "init/main",
+        "init/team"
     ],
     "mc-dp-icons.tickFunctionNames": [
         "wave/tick",

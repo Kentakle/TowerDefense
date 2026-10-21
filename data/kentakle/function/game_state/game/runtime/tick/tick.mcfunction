@@ -16,5 +16,5 @@
     # Активно во время волны
         execute if score #wave_state main matches 1 run function kentakle:game_state/game/runtime/tick/wave/in_progress/tick
 #=======================================================================================================================================================================================================================================#
-
+execute as @e[type=zombie] run data modify entity @s last_hurt_by_mob set from entity @e[type=villager,tag=toolsmith,limit=1] UUID
 schedule function kentakle:game_state/game/runtime/tick/tick 1t

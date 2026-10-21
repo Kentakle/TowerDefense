@@ -3,6 +3,7 @@
         "kentakle:server/init/gamerule",
         "kentakle:server/init/scoreboard",
         "kentakle:server/init/storage",
-        "kentakle:server/init/bossbar"
+        "kentakle:server/init/bossbar",
+        "kentakle:server/init/team"
     ]
 }

@@ -10,7 +10,7 @@
         "left": {
             "type": "minecraft:storage",
             "storage": "kentakle:main",
-            "path": "temp.player_melee_damage"
+            "path": "temp.player_current_damage"
         },
         "right": {
             "type": "minecraft:mul",
@@ -18,7 +18,7 @@
                 {
                     "type": "minecraft:storage",
                     "storage": "kentakle:main",
-                    "path": "temp.player_melee_damage"
+                    "path": "temp.player_current_damage"
                 },
                 {
                     "type": "minecraft:mul",

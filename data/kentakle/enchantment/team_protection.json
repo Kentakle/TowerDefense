@@ -1,0 +1,46 @@
+{
+    "description": {
+        "text": "Защита от союзников"
+    },
+    "supported_items": "stick",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "head"
+    ],
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "team": "runtime"
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "attacker",
+                            "predicate": {
+                                "team": "runtime"
+                            }
+                        }
+                    ]
+                },
+                "effect": {}
+            }
+        ]
+    }
+}
